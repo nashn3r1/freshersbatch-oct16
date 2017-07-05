@@ -1,1 +1,2 @@
 js assignments
+minor changes into the file on line 1 belonging to js assignments
