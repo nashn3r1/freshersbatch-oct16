@@ -1,2 +1,4 @@
 html assignments
 section 1 from assignment 2
+making minor changes into few lines
+belonging to html assignments branch
