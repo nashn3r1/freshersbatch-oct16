@@ -1,1 +1,2 @@
 js assignments
+making minor changes into the file on line 1 from the master
