@@ -1,2 +1,3 @@
 css assignments
 section 2 from assignment 2
+making minor changes into the file on line 3
