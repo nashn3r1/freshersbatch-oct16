@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+css assignments
+section 2 from assignment 2
+making minor changes into the file on line 3
+=======
+Im Ninad from Ctech Dept, RGCER
+css assignments
+making minor changes into the file on line 1 belonging to css assignments
+section 2 from assignment 2
+>>>>>>> css-assignments

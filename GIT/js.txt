@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+js assignments
+making minor changes into the file on line 1 from the master
+=======
+Im Ninad from Ctech dept, RGCER
+js assignments
+minor changes into the file on line 1 belonging to js assignments
+>>>>>>> js-assignments
