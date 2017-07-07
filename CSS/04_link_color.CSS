@@ -1,0 +1,21 @@
+div {
+    background-color: #E0FFFF;
+    width: 98.5%;
+    border-style: hidden;
+    padding: 10px;
+    margin: 1px;
+}
+
+
+a:link {
+    color: red;
+}
+
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}

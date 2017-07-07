@@ -1,0 +1,12 @@
+
+div {
+    width: 320px;
+    padding: 10px;
+    border: 1px solid red;
+    margin: 0;
+}
+
+div.dotted { 
+outline-style: dotted;
+outline-color:green;           
+}
