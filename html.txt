@@ -1,9 +1,0 @@
-Im Ninad from Ctech Dept, RGCER
-html assignments
-section 1 from assignment 2
-<<<<<<< HEAD
-changes from the master
-=======
-making minor changes into few lines
-belonging to html assignments branch
->>>>>>> html-assignments
