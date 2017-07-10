@@ -1,2 +1,2 @@
 Readme File
-This Assignment consist of HTML , CSS and JavaScript files.
+This repository consists of all the assignments.
