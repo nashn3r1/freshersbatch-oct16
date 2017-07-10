@@ -1,9 +1,13 @@
 function fact()
 {
-	var num = document.getElementById("num").value;
-	num = num * fact (num - 1);
-	document.write("factorial is : ",num);
+	var num = parseInt(document.getElementById("num").value);
+	var i , f = 1;
+	for( i=1;i<=num;i++)
+	{
+		f = f * i;
+	}
 		
+	document.write("factorial is: " + f);
 		
    }
   

@@ -1,9 +1,28 @@
-function check()
-{
-	uid = document.getElementById("userid").value;
-	pwd = document.getElementById("pswrd").value;
-	
-	if( uid != " ninad " || pwd != "deshpande")
+
+
+
+var attempt = 3; 
+function check(){
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
+	if ( username == "ninad" && password == "ninad")
 	{
-		alert(" user-id or password is incorrect. you hav 2 chances left!");
+	alert ("Login successfully");
+	
+	
 	}
+	else
+	{
+	attempt --;
+	alert("You have left "+attempt+" attempt;");
+	
+	if( attempt == 0)
+		{
+			document.getElementById("username").disabled = true;
+			document.getElementById("password").disabled = true;
+			document.getElementById("submit").disabled = true;
+			return false;
+		}
+	}
+}
+

@@ -1,15 +1,16 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 	 <script type="text/javascript" src="08_login.js"> </script>
 	 
 </head>
 <body >
-
-   Username:<input type="text" name="userid"> <br></br>
-   Password:<input type="password" name="pswrd"> <br></br>
-   <input type="button" onclick="check()" value="Login">
-   <input type="reset" value="Cancel">
-
+   Please Login: <br></br>
+   <form method = "post">
+		Username:<input type="text" id="username" value=""> </input> <br></br>
+		Password:<input type="password" id="password" value=""></input> <br></br>
+		<input type="button"  value="Login"  onclick="check()" ></input>
+		<input type="reset" value="Cancel"></input>
+	</form>
 </body>
 </html>
