@@ -1,149 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="messi.css">
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-	
-}
 
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-#fan {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-div.pics {
-    margin: 60px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 270px;
-	padding:5px;
-}
-
-div.pics:hover {
-    border: 1px solid #777;
-}
-
-div.pics img {
-    width: 100%;
-    height: 350px;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-	background-color:#000000;
-	color:white;
-	font-family: "Montserrat", sans-serif;
-}
-
-h1 {
-text-align : center;
-}
-
-header {
-  margin-top:100px;
-}
-
-div {
-   margin-left:10%;
-   padding:1px 16px;
-   height:550px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color:#696969;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: black;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}
-
-img{
- display: block;
-    margin: 0 auto;
-}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<div class="w3-sidebar w3-bar-block " style="margin-left:0%;display:none;background-color:black" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large" style="background-color:black; color:yellow;">Close &times;</button>
+  
+
 <ul>
-   <li><img src="logo.jpg" alt="messi" width="134" height="120"></li>
-  <li><img src="home.png" alt="home" width="80" height="80"><a class="active" href="#home">Home</a></li>
-  <li><img src="about.png" alt="home" width="80" height="80"><a href="#about">About</a></li>
-  <li><img src="photos.png" alt="home" width="80" height="80"><a href="#photos">Photos</a></li>
-  <li><img src="mail.png" alt="home" width="80" height="80"><a href="#join">Fan Club</a></li>
+   <li><img src="logo.jpg" alt="messi" width="185" height="150"></li>
+  <li><a class="active" href="#home">
+      <img src="home.png" alt="home" width="80" height="80"></a>
+	  <a class="active" href="#home"><b>Home</b></a></li>
+  <li><a id="btn1" href="#about">
+	<img src="about.png" alt="home" width="80" height="80"></a>
+	<a id="btn1" href="#about"><b style="color:yellow">About</b></a></li>
+  <li><a id="btn2" href="#photos">
+	<img src="photos.png" alt="home" width="80" height="80"></a>
+	<a id="btn2" href="#photos"><b style="color:yellow">Photos</b></a></li>
+	<li><a id="btn3" href="#honours">
+	<img src="trophy1.png" alt="home" width="100" height="80"></a>
+	<a id="btn3" href="#honours"><b style="color:yellow">Honours</b></a></li>
+  <li><a id="btn4" href="#join">
+	<img src="mail.png" alt="home" width="80" height="80"></a>
+	<a id="btn4" href="#join"><b style="color:yellow">Fan Club</b></a></li>
 </ul>
+
+</div>
+
+<div class="w3-black" style="margin-left:0%;">
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    
+  
 
 <div>
     <header id="home" >
-    <h1><b> I'm Lionel Messi. </b></h1>
-    <p style="text-align : center;"> <b>Footballer.</b></p>
-    <img src="messi.jpg" alt="boy" width="1000" height="650">
-     </header>
+	<p style="magrin-left:70%;margin-right:0%;margin-top:-60px"> <img src="fan.png" alt="home" style="width:60px; height:60px; float :middle;"></p>
+	<img src="images.jpeg" alt="messi" width="1000px" height="280px">
+    <h1><b><i> <marquee>I'm Lionel Messi.</marquee></i> </b></h1>
+    <p style="text-align : center;"> <b><marquee>Striker / Attacker @ Fc Barcelona.</marquee></b></p>
+    
+	<img class="mySlides" src="messi.jpg"  width="1000" height="650">
+	<img class="mySlides" src="messi2.jpg" width="1000" height="650">
+	<img class="mySlides" src="messi3.jpg" width="1000" height="650">
+	<img class="mySlides" src="messi4.jpg" width="1000" height="650">
+	
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</header>
   
   
   <div id="about">
-	<h2 style="color:#A9A9A9">My Name</h2>
-    <hr style="width:500px">
+	<h2 style="color:black"><pre> My Name <img src="contacts.png" alt=contacts style="width:40px; height:40px;margin-left:300px;margin-top:-43px;" ></pre></h2>
+    <hr style="width:500px; border-color:yellow;">
     <p>Lionel Andrés "Leo" Messi"(Spanish pronunciation: [ljoˈnel anˈdɾes ˈmesi] (About this sound listen); born 24 June 1987) is an Argentine professional footballer who plays as a forward for Spanish club FC Barcelona and the Argentina national team. 
 	Often considered the best player in the world and regarded by many as the greatest of all time, Messi is the only player in history to win five FIFA Ballon d'Or awards, four of which he won consecutively, and a record-tying four European Golden Shoes.
 	He has won 30 trophies with Barcelona, including eight La Liga titles, four UEFA Champions League titles, and five Copas del Rey.
 	Both a prolific goalscorer and a creative playmaker, Messi holds the records for most official goals scored in La Liga (349), a La Liga season (50) and a club football season in Europe (73), as well as those for most assists made in La Liga (137) and the Copa América (11).
 	He has scored over 500 senior career goals for club and country.
     </p>
+	<p>Born and raised in central Argentina, Messi was diagnosed with a growth hormone deficiency as a child.
+	At age 13, he relocated to Spain to join Barcelona, who agreed to pay for his medical treatment.
+	After a fast progression through Barcelona's youth academy, Messi made his competitive debut aged 17 in October 2004.
+	Despite being injury-prone during his early career, he established himself as an integral player for the club within the next three years, finishing 2007 as a finalist for both the Ballon d'Or and FIFA World Player of the Year award, a feat he repeated the following year.
+	His first uninterrupted campaign came in the 2008–09 season, during which he helped Barcelona achieve the first treble in Spanish football. 
+	At 22 years old, Messi won the Ballon d'Or and FIFA World Player of the Year award by record voting margins.
+	Three successful seasons followed, with Messi winning three consecutive FIFA Ballons d'Or, including an unprecedented fourth. 
+	His personal best campaign statistically to date was the 2011–12 season, in which he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer in official competitions in March 2012. 
+	He again struggled with injury during the following two seasons, twice finishing second for the Ballon d'Or behind Cristiano Ronaldo, his perceived career rival. 
+	Messi regained his best form during the 2014–15 campaign, breaking the all-time goalscoring records in both La Liga and the Champions League in November 2014,and led Barcelona to a historic second treble.
+	</p>
 	</div>
 	
 	<div id="about">
-    <h2 style="color:#A9A9A9">Personal Life</h2>
-    <hr style="width:500px;" >
+    <h2 style="color:black"><pre> Personal Life <img src="lock.png" alt=contacts style="width:40px; height:40px;margin-left:300px;margin-top:-43px;" ></pre></h2>
+    <hr style="width:500px; border-color:yellow;" >
 	<p>Since 2008, when he was 20, Messi has been in a relationship with Antonella Roccuzzo, a fellow native of Rosario.
 	He has known Roccuzzo since he was five years old, as she is the cousin of his best friend since childhood, Lucas Scaglia , who is also a football player.
 	After keeping their relationship private for a year, Messi first confirmed their romance in an interview in January 2009, before going public a month later during a carnival in Sitges after the Barcelona–Espanyol derby.
@@ -168,8 +135,8 @@ img{
 	</div>
 	
 	<div id="about">
-    <h2 style="color:#A9A9A9">Personal Life</h2>
-    <hr style="width:500px;" >
+    <h2 style="color:black"><pre> Style Of Play <img src="barca.png" alt=contacts style="width:50px; height:65px;margin-left:300px;margin-top:-55px;" ></pre></h2>
+    <hr style="width:500px; border-color:yellow;" >
 	<p>Due to his short stature, Messi has a lower centre of gravity than taller players, which gives him greater agility, allowing him to change direction more quickly and evade opposing tackles; this has led the Spanish media to dub him La Pulga Atómica ("The Atomic Flea").
 	Despite being physically unimposing, he possesses significant upper-body strength, which, combined with his low centre of gravity and resulting balance, aids him in withstanding physical challenges from opponents; he has consequently been noted for his lack of diving in a sport rife with playacting.
 	His short, strong legs allow him to excel in short bursts of acceleration while his quick feet enable him to retain control of the ball when dribbling at speed.
@@ -191,58 +158,334 @@ img{
 	
 	
 <div id="photos">
-    <h2 style="color:#A9A9A9">Photos</h2>
-    <hr style="width:500px;" >
+    <h2 style="color:black"><pre> Photos <img src="pic.png" alt=contacts style="width:40px; height:40px;margin-left:300px;margin-top:-43px;" ></pre></h2>
+    <hr style="width:500px; border-color:yellow;" >
 	
 	
 		<div class="pics">
 		<a target="_blank" href="">
 		<img src="marriage.jpg" alt="laptop" width="300" height="200">
 		</a>
-		<div class="desc">
-		<p> Lionel Messi got married to his childhood Girlfriend Antonella Rocuzzo on 30th june 2017</p>
-		</div>
+		
 		</div>
 
 		<div class="pics">
+		
 		<a target="_blank" href="">
 		<img src="shirt.jpg" alt="shirt" width="300" height="200">
 		</a>
-		<div class="desc">
-		<p>Messi scored the winning goal against the arch rivals Real Madrid in dying minutes </p>
+		
 		</div>
-		</div>
+		
+		
 
 		<div class="pics">
 		<a target="_blank" href="">
 		<img src="ballondor.jpg" alt="ballondor" width="300" height="200">
 		</a>
-		<div class="desc">
-		<p> Messi is the only player in history to win five FIFA Ballon d'Or awards, four of which he won consecutively, and a record-tying four European Golden Shoes.</p>
+		
 		</div>
-		</div>
+         
+		 
 
 		<div class="pics">
 		<a target="_blank" href="">
 		<img src="olym.jpg" alt="olympics" width="300" height="200">
 		</a>
-		<div class="desc">
-		<p>Messi won the 2005 FIFA World Youth Championship, finishing the tournament with both the Golden Ball and Golden Shoe, and an Olympic gold medal at the 2008 Summer Olympics. </p>
+			
 		</div>
+		
+		
+		<div class="pics">
+		<a target="_blank" href="">
+		<img src="messi5.jpg" alt="olympics" width="300" height="200">
+		</a>
+			
 		</div>
+		
+		<div class="pics">
+		<a target="_blank" href="">
+		<img src="messi6.jfif" alt="olympics" width="300" height="200">
+		</a>
+			
+		</div>
+		
+		
+		
+		<div class="pics">
+		<a target="_blank" href="">
+		<img src="messi7.jfif" alt="olympics" width="300" height="200">
+		</a>
+			
+		</div>
+		
+         
+		 <div class="pics">
+		<a target="_blank" href="">
+		<img src="messi8.jfif" alt="olympics" width="300" height="200">
+		</a>
+			
+		</div>
+         
+		 
 	
 </div>	
+<div></div>
+<div></div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+<div id="honours">
+    <h2 style="color:black"><pre> Honours <img src="records.png" alt=contacts style="width:50px; height:40px;margin-left:300px;margin-top:-43px;" ></pre></h2>
+    <hr style="width:500px; border-color:yellow;" >
+	
+	
+	 <table style="color:white;margin-left:10%;">
+    <tr>
+    <th>Club : Barcelona </th>
+  </tr>
+  
+  <tr>
+    <td>La Liga: 2004–05, 2005–06, 2008–09, 2009–10, 2010–11, 2012–13, 2014–15, 2015–16</td>
+  </tr>
+  
+  <tr>
+    <td>Copa del Rey: 2008–09, 2011–12, 2014–15, 2015–16, 2016–17</td>
+  </tr>
+  
+  <tr>
+    <td>Supercopa de España: 2006, 2009, 2010, 2011, 2013, 2016</td> 
+  </tr>
+  
+  <tr>
+    <td>UEFA Champions League: 2005–06, 2008–09, 2010–11, 2014–15</td>  
+  </tr>
+  
+   <tr>
+    <td>UEFA Super Cup: 2009, 2011, 2015</td>
+  </tr>
+  
+  <tr>
+    <td>FIFA Club World Cup: 2009, 2011, 2015</td>
+  </tr>  
+</table>
+
+
+  <br></br>
+  </table>
+  
+   <table style="color:white;margin-left:10%;">
+    <tr>
+    <th>Individual Awards </th>
+  </tr>
+  
+  <tr>
+    <td>Ballon d'Or/FIFA Ballon d'Or: 2009, 2010, 2011, 2012, 2015</td>
+  </tr>
+  
+  <tr>
+    <td>European Golden Shoe: 2010, 2012, 2013, 2017</td>
+  </tr>
+  
+  <tr>
+    <td>FIFA World Cup Golden Ball: 2014</td> 
+  </tr>
+  
+  <tr>
+    <td>FIFA World Player of the Year: 2009</td>  
+  </tr>
+  
+   <tr>
+    <td>Copa América Most Valuable Player: 2015 (rejected)</td>
+  </tr>
+  
+  <tr>
+    <td>UEFA Best Player in Europe: 2011, 2015</td>
+  </tr>  
+  
+  <tr>
+    <td>UEFA Club Footballer of the Year: 2009</td>
+  </tr> 
+  <tr>
+    <td>UEFA Club Forward of the Year: 2009</td>
+  </tr> 
+  <tr>
+    <td>World Soccer World Player of the Year: 2009, 2011, 2012, 2015</td>
+  </tr> 
+  <tr>
+    <td>Onze d'Or: 2009, 2010–11, 2011–12</td>
+  </tr> 
+  <tr>
+    <td>Globe Soccer Awards Best Player of the Year: 2015</td>
+  </tr> 
+  <tr>
+    <td>Best Player in La Liga: 2009, 2010, 2011, 2012, 2013, 2015</td>
+  </tr> 
+  <tr>
+    <td>Best Forward in La Liga: 2009, 2010, 2011, 2012, 2013, 2015, 2016</td>
+  </tr> 
+  <tr>
+    <td>FIFA Club World Cup Golden Ball: 2009, 2011</td>
+  </tr> 
+  <tr>
+    <td>FIFA Club World Cup Final Most Valuable Player: 2009, 2011</td>
+  </tr> 
+  <tr>
+    <td>Olimpia de Plata (Argentine Footballer of the Year): 2005, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016</td>
+  </tr> 
+  
+</table>
+  <br></br>
+   <table style="color:white;margin-left:10%;">
+    <tr>
+    <th>Records </th>
+  </tr>
+  
+  <tr>
+    <td>Most (FIFA) Ballons d'Or: 5 (2009–12, 2015)</td>
+  </tr>
+  
+  <tr>
+    <td>Most consecutive Ballons d'Or: 4</td>
+  </tr>
+  
+  <tr>
+    <td>Youngest two-time and three-time Ballon d'Or winner: 23 and 24 years old</td> 
+  </tr>
+  
+  <tr>
+    <td>Top goalscorer in the history of FIFA Club World Cup: 5 goals (shared with César Delgado, Luis Suárez and Cristiano Ronaldo)</td>  
+  </tr>
+  
+   <tr>
+    <td>Guinness World Record as top goalscorer for club and country in a calendar year: 91 goals in 2012</td>
+  </tr>
+  
+  <tr>
+    <td>Top goalscorer in all club competitions in a calendar year: 79 goals in 2012</td>
+  </tr>  
+  
+  <tr>
+    <td>Top goalscorer in a club season: 73 goals in 2011–12</td>
+  </tr> 
+  <tr>
+    <td>Longest goalscoring run in a domestic league: 21 matches, 33 goals in 2012–13</td>
+  </tr> 
+  <tr>
+    <td>Only player to have won more than one FIFA Club World Cup Golden Ball</td>
+  </tr> 
+  <tr>
+    <td>Only player to have won more than one FIFA Club World Cup Final Most Valuable Player award</td>
+  </tr> 
+  <tr>
+    <td>Globe Soccer Awards Best Player of the Year: 2015</td>
+  </tr> 
+  <tr>
+    <td>Best Player in La Liga: 2009, 2010, 2011, 2012, 2013, 2015</td>
+  </tr> 
+  <tr>
+    <td>Best Forward in La Liga: 2009, 2010, 2011, 2012, 2013, 2015, 2016</td>
+  </tr> 
+  <tr>
+    <td>FIFA Club World Cup Golden Ball: 2009, 2011</td>
+  </tr> 
+  <tr>
+    <td>FIFA Club World Cup Final Most Valuable Player: 2009, 2011</td>
+  </tr> 
+  <tr>
+    <td>Olimpia de Plata (Argentine Footballer of the Year): 2005, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015, 2016</td>
+  </tr> 
+  
+</table>
+  <br></br>
+  <table style="color:white;margin-left:10%;">
+    <tr>
+    <th>Records : Spain </th>
+  </tr>
+  
+  <tr>
+    <td>Most Best Player in La Liga awards: 6 (2009–13, 2015)</td>
+  </tr>
+  
+  <tr>
+    <td>Top goalscorer in La Liga: 349 goals</td>
+  </tr>
+  
+  <tr>
+    <td>Top assist provider in La Liga: 137 assists</td> 
+  </tr>
+  
+  <tr>
+    <td>Top goalscorer in the Supercopa de España: 12 goals</td>  
+  </tr>
+  
+   <tr>
+    <td>Top goalscorer in a La Liga season: 50 goals in 2011–12</td>
+  </tr>
+  
+  <tr>
+    <td>Most braces scored in La Liga: 10</td>
+  </tr>  
+  
+  <tr>
+    <td>Most hat-tricks scored in a La Liga season: 8 in 2011–12 (shared with Cristiano Ronaldo)</td>
+  </tr> 
+  <tr>
+    <td>Most teams scored against in a season: 19 in 2012–13 (shared with Ronaldo and Cristiano Ronaldo)</td>
+  </tr> 
+  <tr>
+    <td>Only player to score consecutively against all opposition teams in La Liga: 19 matches, 30 goals in 2012–13</td>
+  </tr> 
+  <tr>
+    <td>First player to reach 300 La Liga goals</td>
+  </tr> 
+  <tr>
+    <td>Youngest player to score 200 goals in La Liga: 25 years and 7 months in January 2013</td>
+  </tr> 
+  <tr>
+    <td>Top goalscorer in El Clásico: 23 goals</td>
+  </tr> 
+  <tr>
+    <td>Top goalscorer in the Derbi barceloní: 17 goals</td>
+  </tr> 
+  <tr>
+    <td>Top goalscorer in official competitions: 507 goals</td>
+  </tr> 
+  <tr>
+    <td>Top goalscorer including friendlies: 539 goals</td>
+  </tr> 
+  <tr>
+    <td>Top goalscorer in the UEFA Champions League: 94 goals</td>
+  </tr> 
+  
+</table>
+<br></br>
+<p> <i><marquee>More is yet to come.....</marquee></i><p>
+
+  
+  
+   
+	
+		
+</div>	
+
 
 <div> </div>
 <div> </div>
 
 
 <div id="join">
-    <h2 style="color:#A9A9A9">Fan Club</h2>
-    <hr style="width:500px;" >  
+    <h2 style="color:black"><pre> Fan Club <img src="fan1.png" alt=contacts style="width:40px; height:40px;margin-left:300px;margin-top:-43px;" ></pre></h2>
+    <hr style="width:500px; border-color:yellow;" >  
 
-     <div id="fan">
-      <form action="/action_page.php">
+     <div id="fan" style="margin-left:10%;margin-right:10%">
+	 
+     <form action="/action_page.php" >
+	  
     <label for="fname" style="color:black;">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your First name..">
 
@@ -255,6 +498,9 @@ img{
 	<label for="pwd" style="color:black;">Password</label>
     <input type="text" id="pwd" name="pwd" placeholder="Your Password..">
 	
+	<label for="bday" style="color:black;">Date Of Birth </label><br></br>
+	<input type="date" id="bday" name="bday"> <br></br>
+	
     <label for="country" style="color:black;">Country</label>
     <select id="country" name="country">
       <option value="australia">Australia</option>
@@ -266,23 +512,66 @@ img{
      <input type="submit" value="Submit">
   </form>
   </div>
+  
  </div>
  <br></br>
  <br></br>
  <br></br>
  <br></br>
- <img src="fb.png" alt="home" style="width:40px; height:40px; float :left;">
- <img src="in.png" alt="home" style="width:40px; height:40px; float :left;">
- <img src="pin.gif" alt="home" style="width:40px; height:40px; float :left;">
- <img src="insta.jpg" alt="home" style="width:50px; height:40px; float :left;">
+ <p style="margin-left:520px;"> <sub> Connect With Me...!</sub></p>
+ 
+ <img src="fb.png" alt="home" style="margin-left:460px; width:40px; height:40px; border-radius:50px; float :left;">
+ <img src="twitter.png" alt="home" style="width:40px; height:40px; border-radius:50px;float :left;">
+ <img src="in.png" alt="home" style="width:40px; height:40px; border-radius:50px;float :left;">
+ <img src="pin.gif" alt="home" style="width:40px; height:40px; border-radius:50px;float :left;">
+ <img src="insta1.jpg" alt="home" style="width:40px; height:40px;border-radius:50px; float :left;">
+ <img src="snap.png" alt="home" style="width:40px; height:40px;border-radius:50px; float :left;">
  <br></br>
- <p style="margin-left:0%"> Powered by FcBarcelona.</p>
+ <p style="margin-left:510px"> <sup>Powered by FcBarcelona.</sup></p>
+ 
+ <p style="magrin-left:70%;margin-right:0%;"> <img src="logo2.png" alt="home" style="width:60px; height:60px; float :middle;"></p>
 
 </div>
 
+</div>
+</div>
 
     
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+  </script>
+  
+  <script>
+  $("#btn1").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about").offset().top
+    }, 2000);
+});
 
+$("#btn2").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#photos").offset().top
+    }, 2000);
+});
+
+  $("#btn3").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#honours").offset().top
+    }, 2000);
+});
+
+  $("#btn4").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#join").offset().top
+    }, 2000);
+});
+  </script>
+  
+  
+  
+  
 
 </body>
 </html>
