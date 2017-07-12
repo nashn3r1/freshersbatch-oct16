@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="messi.css">
-
+<script type="text/javascript" src="messi.js"> </script>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,24 +21,29 @@ function w3_close() {
 }
 </script>
 
-<div class="w3-sidebar w3-bar-block " style="margin-left:0%;display:none;background-color:black" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large" style="background-color:black; color:yellow;">Close &times;</button>
+<div class="w3-sidebar w3-bar-block " style="margin-left:0%; margin-bottom:10px; margin-top:0px; display:none;background-color:black" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large" style="background-color:black; color:yellow;margin-top:-10px;">Close &times;</button>
   
 
 <ul>
    <li><img src="logo.jpg" alt="messi" width="185" height="150"></li>
-  <li><a class="active" href="#home">
+   
+  <li><a  id="btn" class="active" href="#home">
       <img src="home.png" alt="home" width="80" height="80"></a>
-	  <a class="active" href="#home"><b>Home</b></a></li>
+	  <a id="btn" class="active" href="#home"><b>Home</b></a></li>
+  
   <li><a id="btn1" href="#about">
 	<img src="about.png" alt="home" width="80" height="80"></a>
 	<a id="btn1" href="#about"><b style="color:yellow">About</b></a></li>
+  
   <li><a id="btn2" href="#photos">
 	<img src="photos.png" alt="home" width="80" height="80"></a>
 	<a id="btn2" href="#photos"><b style="color:yellow">Photos</b></a></li>
-	<li><a id="btn3" href="#honours">
+	
+  <li><a id="btn3" href="#honours">
 	<img src="trophy1.png" alt="home" width="100" height="80"></a>
 	<a id="btn3" href="#honours"><b style="color:yellow">Honours</b></a></li>
+  
   <li><a id="btn4" href="#join">
 	<img src="mail.png" alt="home" width="80" height="80"></a>
 	<a id="btn4" href="#join"><b style="color:yellow">Fan Club</b></a></li>
@@ -46,7 +51,7 @@ function w3_close() {
 
 </div>
 
-<div class="w3-black" style="margin-left:0%;">
+<div class="w3-black" style="margin-left:0%; margin-top:-10px;">
   <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
   <div class="w3-container">
     
@@ -55,7 +60,7 @@ function w3_close() {
 <div>
     <header id="home" >
 	<p style="magrin-left:70%;margin-right:0%;margin-top:-60px"> <img src="fan.png" alt="home" style="width:60px; height:60px; float :middle;"></p>
-	<img src="images.jpeg" alt="messi" width="1000px" height="280px">
+	
     <h1><b><i> <marquee>I'm Lionel Messi.</marquee></i> </b></h1>
     <p style="text-align : center;"> <b><marquee>Striker / Attacker @ Fc Barcelona.</marquee></b></p>
     
@@ -163,7 +168,7 @@ function carousel() {
 	
 	
 		<div class="pics">
-		<a target="_blank" href="">
+		<a  href="marriage.jpg">
 		<img src="marriage.jpg" alt="laptop" width="300" height="200">
 		</a>
 		
@@ -171,7 +176,7 @@ function carousel() {
 
 		<div class="pics">
 		
-		<a target="_blank" href="">
+		<a  href="shirt.jpg">
 		<img src="shirt.jpg" alt="shirt" width="300" height="200">
 		</a>
 		
@@ -180,7 +185,7 @@ function carousel() {
 		
 
 		<div class="pics">
-		<a target="_blank" href="">
+		<a  href="ballondor.jpg">
 		<img src="ballondor.jpg" alt="ballondor" width="300" height="200">
 		</a>
 		
@@ -189,7 +194,7 @@ function carousel() {
 		 
 
 		<div class="pics">
-		<a target="_blank" href="">
+		<a href="olym.jpg">
 		<img src="olym.jpg" alt="olympics" width="300" height="200">
 		</a>
 			
@@ -197,14 +202,14 @@ function carousel() {
 		
 		
 		<div class="pics">
-		<a target="_blank" href="">
+		<a  href="messi5.jpg">
 		<img src="messi5.jpg" alt="olympics" width="300" height="200">
 		</a>
 			
 		</div>
 		
 		<div class="pics">
-		<a target="_blank" href="">
+		<a href="messi6.jfif">
 		<img src="messi6.jfif" alt="olympics" width="300" height="200">
 		</a>
 			
@@ -213,7 +218,7 @@ function carousel() {
 		
 		
 		<div class="pics">
-		<a target="_blank" href="">
+		<a href="messi7.jfif">
 		<img src="messi7.jfif" alt="olympics" width="300" height="200">
 		</a>
 			
@@ -221,7 +226,7 @@ function carousel() {
 		
          
 		 <div class="pics">
-		<a target="_blank" href="">
+		<a href="messi8.jfif">
 		<img src="messi8.jfif" alt="olympics" width="300" height="200">
 		</a>
 			
@@ -484,7 +489,7 @@ function carousel() {
 
      <div id="fan" style="margin-left:10%;margin-right:10%">
 	 
-     <form action="/action_page.php" >
+     <form name="myForm" onsubmit="return validate();" method="post" >
 	  
     <label for="fname" style="color:black;">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your First name..">
@@ -506,8 +511,8 @@ function carousel() {
       <option value="australia">Australia</option>
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
-	  <option value="usa">India</option>
-	  <option value="usa">Spain</option>
+	  <option value="india">India</option>
+	  <option value="spain">Spain</option>
     </select>
      <input type="submit" value="Submit">
   </form>
@@ -544,6 +549,12 @@ function carousel() {
   </script>
   
   <script>
+   $("#btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#home").offset().top
+    }, 2000);
+});
+  
   $("#btn1").click(function() {
     $('html, body').animate({
         scrollTop: $("#about").offset().top
