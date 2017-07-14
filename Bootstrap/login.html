@@ -9,7 +9,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="login.js"> </script>
   <style>
-  input[type=text],input[type=date], select {
+  body{font-family: "Comic Sans MS", cursive, sans-serif;}
+  input[type=text],input[type=date],input[type=password], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -21,11 +22,11 @@
 }
 
 input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
+    width: 100px;
+    background-color: #b3ecff;
     color: black;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin-left: 350px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -66,6 +67,41 @@ input[type=submit]:hover {
       }
       .row.content {height:auto;} 
     }
+	@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#blink {
+    animation: blink 2s;
+    animation-iteration-count: infinite;
+}
+#updown {
+    margin-left:0px;
+    width: 200px;
+    height: 50px;
+    background: #b3ecff;
+    position: relative;
+    -webkit-animation: myfirst 5s infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 10s infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes myfirst {
+    0%   {background: #4d94ff; left: 0px; top: 0px;}
+    25%  {background: #b3ecff; left: 0px; top: 0px;}
+    50%  {background: #4d94ff; left: 0px; top: 0px;}
+    75%  {background: #b3ecff; left: 0px; top: 0px;}
+    100% {background: #4d94ff; left: 0px; top: 0px;}
+}
   </style>
 </head>
 <body>
@@ -84,14 +120,14 @@ input[type=submit]:hover {
       <ul class="nav navbar-nav">
         <li class="active" ><a href="Homepage.html"><p class="glyphicon glyphicon-home"> Home</p></a></li>
         <li>
-			<form class="navbar-form navbar-left" style="margin:auto;margin-top:9px;" >
+			<form class="navbar-form navbar-left" style="margin:auto;margin-top:1px;" >
 				<div class="form-group" >
 				<input type="text" class="form-control" placeholder="Search Ads">
 				</div>
-				<button type="submit" class="btn btn-default">Search</button>
+				<button type="submit" class="btn btn-default" style="background-color: #b3ecff">Search</button>
 			</form>
 			</p></li>
-        <li><a href="ads_by_logged_in_users.html"><p class="glyphicon glyphicon-globe" style="word-spacing:1px"> Show Ads by Logged in Users</p></a></li>
+    
       </ul>
       <ul class="nav navbar-nav navbar-right">
 		<li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
@@ -109,19 +145,18 @@ input[type=submit]:hover {
   <div class="row content">
     <div class="col-sm-2 sidenav" style="height:200%">
 		<div class="dropdown">
-		<button class="btn btn-block dropdown-toggle" type="button" data-toggle="dropdown">Shop By Category
+		<button class="btn btn-block dropdown-toggle" id="updown" type="button" data-toggle="dropdown" style="background-color: #b3ecff">Shop By Category
 		<span class="caret"></span></button>
 		<ul class="dropdown-menu col-lg-12">
-		<li><a href="#">Cars</a></li>
-		<li><a href="#">Real Estate</a></li>
-		<li><a href="#">Mobiles</a></li>
-		<li><a href="#">Electronics & Appliances</a></li>
-		<li><a href="#">Jobs</a></li>
-		<li><a href="#">Fashion</a></li>
-		<li><a href="#">Sports</a></li>
-		<li><a href="#">Furniture</a></li>
-		<li><a href="#">Services</a></li>
-		<li><a href="#">Pets</a></li>
+		<li><a href="cars.html">Cars</a></li>
+		<li><a href="estate.html">Real Estate</a></li>
+		<li><a href="electronics.html">Electronics Appliances</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+		<li><a href="fashion.html">Fashion</a></li>
+		<li><a href="sports.html">Sports</a></li>
+		<li><a href="furniture.html">Furniture</a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="pets.html">Pets</a></li>
 		</ul>
 	  </div>
     </div>
@@ -130,7 +165,7 @@ input[type=submit]:hover {
 	
 	
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
+      <h1>Please Login :</h1>
       <hr>
 	  <form name="myForm" onsubmit="return validate();" method="post" >
 	
@@ -138,21 +173,24 @@ input[type=submit]:hover {
     <input type="text" id="email" name="Email" placeholder="Your Email..">
 
 	<label for="pwd" style="color:black;">Password</label>
-    <input type="text" id="pwd" name="pwd" placeholder="Your Password..">
+    <input type="password" id="pwd" name="pwd" placeholder="Your Password..">
 	
      <input type="submit" value="Submit">
   </form>
       
     </div>
-    <div class="col-sm-2 sidenav" style="height:200%" >
+   <div class="col-sm-2 sidenav" style="height:230%" >
       <div class="well">
-        <p>ADS</p>
-      </div>
+ <p id="blink"><img src="messi.jpg" alt="messi"  width="170px" height="170px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px;margin-left:-7px;"></p>
+      <p>Tata Motors "Namaste India..!"</p>
+	  </div>
       <div class="well">
-        <p>ADS</p>
-      </div>
+        <p id="blink"><img src="duo.png" alt="duo"  width="170px" height="170px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px;margin-left:-7px;"></p>
+      <p>Google Duo</p>
+	  </div>
 	  <div class="well">
-        <p>ADS</p>
+        <p id="blink"><img src="fb-ad.jpg" alt="messi"  width="170px" height="170px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px;margin-left:-7px;"></p>
+      <p>Facebook Ads</p>
       </div>
     </div>
   </div>
@@ -168,24 +206,24 @@ input[type=submit]:hover {
 	
     <div class="col-sm-2">
 	<ul>
-	<li> <a class="ex1" href="default.asp">Locations Map</li> </a>
-	<li> <a class="ex1" href="default.asp">Popular Searches</li>
-	<li> <a class="ex1" href="default.asp">Site Map</li>
-	<li> <a class="ex1" href="default.asp">Archive</li>
-	<li> <a class="ex1" href="default.asp">Featured Ads</li>
+	<li> <a class="ex1" href="default.asp">Locations Map</a></li> 
+	<li> <a class="ex1" href="default.asp">Popular Searches</a></li>
+	<li> <a class="ex1" href="default.asp">Site Map</a></li>
+	<li> <a class="ex1" href="default.asp">Archive</a></li>
+	<li> <a class="ex1" href="default.asp">Featured Ads</a></li>
 	</ul>
 	</div>
 	
     <div class="col-sm-2" >
 	<ul>
-	<li> Terms of Use</li>
-	<li> Help & Contact Us</li>
+	<li><a class="ex1" href="default.asp"> Terms of Use</a></li>
+	<li><a class="ex1" href="default.asp"> Help & Contact Us</a></li>
 	</div>
     <div class="col-sm-2" >
 	Who We Are?
 	<ul>
-	<li> Join </li>
-	<li> About </li>
+	<li><a class="ex1" href="default.asp"> Join </a></li>
+	<li><a class="ex1" href="default.asp"> About </a></li>
 	</ul>
 	</div>
 	<div class="col-sm-4">Connect With Us.</div>
@@ -199,7 +237,7 @@ input[type=submit]:hover {
 
 
 <footer class="container-fluid text-center">
-  <p> footer</p>
+  <p style="color:#80dfff;">Xoriant Online Store Pvt Ltd</p>
 </footer>
 
 </body>
