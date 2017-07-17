@@ -42,7 +42,7 @@
       .row.content {height:auto;} 
     }
 	
-@keyframes blink {
+	@keyframes blink {
     0% {
         opacity: 1;
     }
@@ -57,6 +57,22 @@
     animation: blink 2s;
     animation-iteration-count: infinite;
 }
+
+ #ease{
+    width: 200px;
+    height: 200px;
+    
+    -webkit-transition-property: width, height; /* Safari */
+    -webkit-transition-duration: 2s; /* Safari */
+    transition-property: width, height;
+    transition-duration: 2s;
+}
+
+#ease:hover {
+    width: 300px;
+    height: 300px;
+}
+
 #updown {
     margin-left:0px;
     width: 200px;
@@ -76,20 +92,6 @@
     50%  {background: #4d94ff; left: 0px; top: 0px;}
     75%  {background: #b3ecff; left: 0px; top: 0px;}
     100% {background: #4d94ff; left: 0px; top: 0px;}
-}
- #ease{
-    width: 200px;
-    height: 200px;
-    
-    -webkit-transition-property: width, height; /* Safari */
-    -webkit-transition-duration: 2s; /* Safari */
-    transition-property: width, height;
-    transition-duration: 2s;
-}
-
-#ease:hover {
-    width: 300px;
-    height: 300px;
 }
   </style>
 </head>
@@ -119,11 +121,11 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-		<li><a href="ads_by_logged_in_users.html"><p class="glyphicon glyphicon-globe" style="word-spacing:1px"> Your Ads</p></a></li>
+		<li><a href="Homepage2.html"><span class="glyphicon glyphicon-thumbs-up"></span> <b>Hi ! Anand</b></a></li>
+		<li><a href="ads_by_logged_in_users.html"><p class="glyphicon glyphicon-globe">Your Ads</p></a></li>
 		<li><a href="post_ad.html"><span class="glyphicon glyphicon-upload"></span> Post Ad</a></li>
 		<li><a href="edit_ad.html"><span class="glyphicon glyphicon-edit"></span> Edit Ad</a></li>
+		<li><a href="Homepage.html"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
 		
 		</ul>
     </div>
@@ -137,7 +139,7 @@
 		<div class="dropdown">
 		<button class="btn btn-block dropdown-toggle" id="updown" type="button" data-toggle="dropdown" style="background-color: #b3ecff">Shop By Category
 		<span class="caret"></span></button>
-		<ul class="dropdown-menu col-lg-12">
+		<ul class="dropdown-menu col-lg-12" >
 		<li><a href="cars.html">Cars</a></li>
 		<li><a href="estate.html">Real Estate</a></li>
 		<li><a href="electronics.html">Electronics Appliances</a></li>
@@ -149,52 +151,74 @@
 		<li><a href="pets.html">Pets</a></li>
 		</ul>
 	  </div>
+	  
     </div>
   
 
 	
 	
     <div class="col-sm-8 text-left"> 
-      <h3><img src="elec.jpg" alt="elec" width="100px" height="100px"></a> Category :- ELECTRONICS & APPLIANCES</h3>
-      
+      <a href="deals.html">
+      <h1 id="blink"><img src="deal.jpg" alt="cars"  width="100%" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px;margin-top:-17px;">
+	  </img></h1>
+	  </a>
+      <p></p><h3>Categories : </h3>
       <hr>
 	  
 	  <div class="container-fluid bg-3 text-center">
   
 		
-		<div class="row">
+		<div class="row" >
 			<div class="col-sm-4">
-			<img src="unavailable.jpg" id="ease" alt="cars"  width="200px" height="200px">
-			<p> Description</p>
+			<a href="cars.html">
+			<img src="car.jpg" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
 			</div>
 			<div class="col-sm-4">
-			<img src="unavailable.jpg" id="ease" alt="cars"  width="200px" height="200px">
-			<p> Description</p>
+			<a href="estate.html">
+			<img src="realestate.jpg" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
 			</div>
 			<div class="col-sm-4">
-			<img src="unavailable.jpg" id="ease" alt="cars"  width="200px" height="200px">
-			<p> Description</p>
+			<a href="electronics.html">
+			<img src="elec.jpg" id="ease" alt="cars" width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
 			</div>
          </div>
 		 <p></p>
 		 <hr>
 		 <div class="row">
 			<div class="col-sm-4">
-			<img src="unavailable.jpg" id="ease" alt="cars"  width="200px" height="200px">
-			<p> Description</p>
+			<a href="jobs.html">
+			<img src="jobs.jpg" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
 			</div>
 			<div class="col-sm-4">
-			<img src="unavailable.jpg" id="ease" alt="cars"  width="200px" height="200px">
-			<p> Description</p>
+			<a href="fashion.html">
+			<img src="fashion.png" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
 			</div>
 			<div class="col-sm-4">
-			<img src="unavailable.jpg" id="ease" alt="cars"  width="200px" height="200px">
-			<p> Description</p>
+			<a href="sports.html">
+			<img src="Sports.jpg" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
 			</div>
          </div>
+		 <p></p>
+		 <hr>
+		 <div class="row">
+			<div class="col-sm-4">
+			<a href="furniture.html">
+			<img src="furniture.png" id="ease" alt="cars" width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
+			</div>
+			<div class="col-sm-4">
+			<a href="services.html">
+			<img src="service.png" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
+			</div>
+			<div class="col-sm-4">
+			<a href="pets.html">
+			<img src="pets.jpg" id="ease" alt="cars"  width="200px" height="200px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px"></a>
+			</div>
+         </div>
+  
 		</div>
       
     </div>
+	
     <div class="col-sm-2 sidenav" style="height:250%" >
       <div class="well">
         <p id="blink"><img src="messi.jpg" alt="messi"  width="170px" height="170px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px;margin-left:-7px;"></p>
@@ -207,7 +231,7 @@
 	  <div class="well">
         <p id="blink"><img src="fb-ad.jpg" alt="messi"  width="170px" height="170px" style="border-width:1px;border-style:solid;border-color:#80dfff;border-radius:25px;margin-left:-7px;"></p>
       <p>Facebook Ads</p>
-      </div>
+	  </div>
     </div>
   </div>
 </div>
@@ -238,7 +262,7 @@
     <div class="col-sm-2" >
 	Who We Are?
 	<ul>
-	<li><a class="ex1" href="default.asp"> Join </a></li>
+	<li><a class="ex1" href="register.html"> Join </a></li>
 	<li><a class="ex1" href="default.asp"> About </a></li>
 	</ul>
 	</div>

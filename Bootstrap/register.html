@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="login.js"> </script>
+  <script type="text/javascript" src="register.js"> </script>
   <style>
   body{font-family: "Comic Sans MS", cursive, sans-serif;}
   input[type=text],input[type=date], select {
@@ -133,9 +133,7 @@ input[type=submit]:hover {
       <ul class="nav navbar-nav navbar-right">
 		<li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
         <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-		<li><a href="post_ad.html"><span class="glyphicon glyphicon-upload"></span> Post Ad</a></li>
-		<li><a href="edit_ad.html"><span class="glyphicon glyphicon-edit"></span> Edit Ad</a></li>
-		<li><a href="Homepage.html"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+	
 		</ul>
     </div>
   </div>
@@ -188,14 +186,14 @@ input[type=submit]:hover {
     <label for="country" style="color:black;">City</label>
     <select id="country" name="country">
       <option value="mumbai">Mumbai</option>
-      <option value="puen">Pune</option>
+      <option value="pune">Pune</option>
       <option value="nagpur">Nagpur</option>
 	  <option value="banglore">Banglore</option>
 	  <option value="kolkata">Kolkata</option>
 	  <option value="delhi">Delhi</option>
 	  <option value="other">Other</option>
     </select>
-     <input type="submit" value="Submit">
+    <input type="button" onclick="validate(this.form)" value="Submit">
   </form>
       
     </div>

@@ -1,12 +1,12 @@
-function validate() {
-    var x = document.forms["myForm"]["email"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-        alert("Not a valid e-mail address");
-        return false;
-    }
-	else{
-		alert("e-mail address is validated");
-	}
+function check(form)/*function to check userid & password*/
+{
+ /*the following code checkes whether the entered userid and password are matching*/
+ if(form.email.value == "anand@xoriant.com" && form.pwd.value == "anand123")
+  {
+    window.open("Homepage2.html","_self")/*opens the target page while Id & password matches*/
+  }
+ else
+ {
+   alert("Error Password or Username")/*displays error message*/
+  }
 }

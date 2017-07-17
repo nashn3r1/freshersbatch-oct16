@@ -21,7 +21,7 @@
 	
 }
 
-input[type=submit] {
+input[type=submit] , input[type=button]{
     width: 100px;
     background-color: #b3ecff;
     color: black;
@@ -35,6 +35,9 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+
+
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -132,9 +135,7 @@ input[type=submit]:hover {
       <ul class="nav navbar-nav navbar-right">
 		<li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
         <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-		<li><a href="post_ad.html"><span class="glyphicon glyphicon-upload"></span> Post Ad</a></li>
-		<li><a href="edit_ad.html"><span class="glyphicon glyphicon-edit"></span> Edit Ad</a></li>
-		<li><a href="Homepage.html"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+
 		</ul>
     </div>
   </div>
@@ -169,13 +170,13 @@ input[type=submit]:hover {
       <hr>
 	  <form name="myForm" onsubmit="return validate();" method="post" >
 	
-	<label for="email" style="color:black;">Email address</label>
-    <input type="text" id="email" name="Email" placeholder="Your Email..">
+	<label for="email" style="color:black;">Username / Email address</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
 
 	<label for="pwd" style="color:black;">Password</label>
     <input type="password" id="pwd" name="pwd" placeholder="Your Password..">
-	
-     <input type="submit" value="Submit">
+
+     <input type="button" onclick="check(this.form)" value="Submit">
   </form>
       
     </div>

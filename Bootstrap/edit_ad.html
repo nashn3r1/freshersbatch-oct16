@@ -7,8 +7,37 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="login.js"> </script>
   <style>
   body{font-family: "Comic Sans MS", cursive, sans-serif;}
+  
+  input[type=text],input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color:  #b3ecff;
+    color: black;
+    padding: 14px 20px;
+    margin-left: 350px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+  
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
       margin-bottom: 0;
@@ -104,8 +133,7 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-		<li><a href="register.html"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+		
 		<li><a href="post_ad.html"><span class="glyphicon glyphicon-upload"></span> Post Ad</a></li>
 		<li><a href="edit_ad.html"><span class="glyphicon glyphicon-edit"></span> Edit Ad</a></li>
 		<li><a href="Homepage.html"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
@@ -139,9 +167,45 @@
 	
 	
     <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
+      <h1>Edit Ads :</h1>
       <p></p>
-      <hr>
+      <hr><form name="myForm" onsubmit="return validate();" method="post" >
+	
+			<label for="pid" style="color:black;">Post Id :</label>
+			<input type="text" id="pid" name="pid" placeholder="Title..">
+
+			<label for="status" style="color:black;">Status :</label>
+			<input type="text" id="status" name="status" placeholder="Status..">
+			
+			<label for="title" style="color:black;">Title :</label>
+			<input type="text" id="title" name="title" placeholder="Title..">
+			
+			<label for="name" style="color:black;">Name :</label>
+			<input type="text" id="name" name="name" placeholder="Name..">
+			
+			<label for="cat" style="color:black;">Category</label>
+				<select id="cat" name="cat">
+					<option value="cars">Cars</option>
+					<option value="real estate">Real  Estate</option>
+					<option value="elec">Electronics</option>
+					<option value="jobs">Jobs</option>
+					<option value="fashion">Fashion</option>
+					<option value="sports">Sports</option>
+					<option value="furniture">Furniture</option>
+					<option value="services">Services</option>
+					<option value="pets">Pets</option>
+				</select>
+				
+			<label for="desc" style="color:black;">Description :</label>
+			<input type="text" id="desc" name="desc" style="height:100px" placeholder="Description..">
+			
+			<label for="myFile" style="color:black;">Upload Pic :</label>
+			<input type="file" id="myFile" multiple>
+	
+	
+			<input type="submit" value="Submit">
+  </form>
+	  
 	  
       
     </div>
